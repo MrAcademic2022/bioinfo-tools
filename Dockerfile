@@ -32,7 +32,7 @@ RUN apt-get update && apt-get install -y samtools \
 ENV SAMTOOLS="/usr/bin/samtools"
 
 # Install multiqc v1.17
-RUN pip3 install multiqc==1.17
+RUN pip3 install --break-system-packages multiqc==1.17
 ENV MULTIQC="/usr/local/bin/multiqc"
 
 # Install picard v3.0.0
