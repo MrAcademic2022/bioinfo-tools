@@ -48,3 +48,5 @@ WORKDIR /data
 # Default command
 CMD ["/bin/bash"]
 
+# Delete temporary files
+RUN rm -rf /var/lib/apt/lists/* /tmp/*
